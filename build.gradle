@@ -1,0 +1,15 @@
+plugins {
+    id 'com.craigburke.karma' version '1.4.4'
+}
+
+def testSuiteName = 'qunit-example'
+
+karma {
+    browsers = ['Chrome']
+    frameworks = ['qunit']
+    dependencies (['karma-qunit'])
+    files = [
+            'src/main/js/*.js'
+    ]
+ }
+
