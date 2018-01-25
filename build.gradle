@@ -9,7 +9,7 @@ karma {
     frameworks = ['qunit']
     dependencies (['karma-qunit'])
     files = [
-            'src/main/js/*.js'
+            '**/*.js'
     ]
  }
 
